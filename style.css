@@ -1,16 +1,16 @@
 /* Global */
 @font-face {
     font-family: 'yekan';
-    src: url('../fonts/yekan.woff') format('woff'),
-         url('../fonts/Yekan.ttf') format('ttf'),
-         url('../fonts/Yekan.eot') format('eot');
+    src: url('./resources/fonts/yekan.woff') format('woff'),
+         url('./resources/fonts/Yekan.ttf') format('ttf'),
+         url('./resources/fonts/Yekan.eot') format('eot');
 }
 
 @font-face {
     font-family: 'parastoo';
-    src: url('../fonts/Parastoo.woff2') format('woff2'),
-         url('../fonts/Parastoo.woff') format('woff'),
-         url('../fonts/Parastoo.ttf') format('ttf');
+    src: url('./resources/fonts/Parastoo.woff2') format('woff2'),
+         url('./resources/fonts/Parastoo.woff') format('woff'),
+         url('./resources/fonts/Parastoo.ttf') format('ttf');
 }
 
 html, body {
