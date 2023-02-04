@@ -1,0 +1,261 @@
+/* Global */
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/yekan-font/yekan.woff') format('woff'),
+         url('../fonts/yekan-font/Yekan.ttf') format('ttf'),
+         url('../fonts/yekan-font/Yekan.eot') format('eot');
+}
+
+@font-face {
+    font-family: 'parastoo';
+    src: url('../fonts/parastoo-font-v1.0.0-alpha5/web/Parastoo.woff2') format('woff2'),
+         url('../fonts/parastoo-font-v1.0.0-alpha5/web/Parastoo.woff') format('woff'),
+         url('../fonts/parastoo-font-v1.0.0-alpha5/web/Parastoo.ttf') format('ttf');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    text-align: center;
+    width: 100%;
+    font-family: 'yekan', serif;
+}
+
+/* Header & Navigation 
+----------------------------------------*/
+header {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    text-align: center;
+    background-color: rgb(231, 224, 224)
+}
+
+h1 {
+    font-family: 'parastoo';
+    margin-bottom: 3rem;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.875rem;
+    margin-bottom: 3rem;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    padding: 1.25rem;
+    margin: 3rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+nav a:link {
+    color: #041249;
+}
+
+nav a:visited {
+    color: #041249;
+}
+
+nav a:hover {
+    color: rgb(208, 139, 19);
+}
+
+nav a:active {
+    color: #8a5126;
+}
+
+/** Media Query for Size of a Tags **/
+@media only screen and (max-width: 612px) {
+    nav a {
+        padding: 0.625rem;
+        margin: 0.800rem;
+    }
+}
+
+/* banner 
+----------------------------------------*/
+.banner {
+    position: relative;
+    top: 10rem;
+    height: 31.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    background-image: url('../pictures/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 4.5rem;
+    padding-top: 5rem;
+}
+
+
+.banner h2 {
+    position: relative;
+    top: 3.125rem;
+    left: 8rem;
+    float: left;
+}
+    
+/** Media Query for h2 heading in banner( width: 900px) **/
+@media only screen and (max-width: 768px) {
+    .banner h2 {
+        left: 5rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* Services 
+----------------------------------------*/
+.services h2 {
+    margin-top: 20rem;
+    padding-top: 3rem;
+}
+
+#services-container {
+    display: flex;
+    width: 100%;
+    gap: 0.625rem;
+}
+
+.service-item {
+    width: auto;
+    height: 350px;
+    overflow: hidden;
+    flex: 1 1;
+    margin: 0 1.5rem;
+}
+
+.service-item h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.service-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+    border-radius: .75rem;
+}
+
+/** Media Query for Tablet **/
+@media only screen and (max-width: 768px) {
+    #services-container {
+        flex-direction: column;
+    }
+
+    .service-item {
+        margin-bottom: 3rem;
+    }
+
+    .service-item img {
+        object-fit: cover;
+        width: 100%;
+        height: 500px;
+        border-radius: .75rem;
+    }
+
+    .service-item h4 {
+        font-size: 1.125rem;
+    }
+}
+
+/** Media Query for Mobile **/
+@media only screen and (max-width: 480px) {
+    .service-item img {
+        height: 300px;
+    }
+    .service-item h4 {
+        font-size: 1rem;
+    }
+}
+
+/* Team Section 
+----------------------------------------*/
+.team h2 {
+    margin-top: 10rem;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+}
+
+.team-item {
+    max-width: 100%;
+    height: 350px;
+    overflow: hidden;
+    flex: 1 1;
+    margin: 0 1.5rem;
+}
+
+.team-item h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.team-item img {
+    max-width: 100%;
+    height: 80%;
+    border-radius: .75rem;
+    object-fit: cover;
+}
+
+/** Media Query for Tablet **/
+@media only screen and (max-width: 768px) {
+    .team-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team-item {
+        margin-bottom: 3rem;
+        height: 200px;
+    }
+
+    .team-item img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        border-radius: .75rem;
+    }
+
+    .team-item h4 {
+        font-size: 1.125rem;
+    }
+}
+
+/** Media Query for Mobile **/
+@media only screen and ( max-width: 480px) {
+    .team-item img {
+        height: 300px;
+        object-fit: scale-down;
+    }
+    .team-item h4 {
+        font-size: 1rem;
+    }
+}
+
+/* Footer */
+footer p {
+    color: snow;
+    background-color: rgb(159, 93, 17, 80%);
+    margin-top: 10rem;
+    margin-bottom: 1.5rem;
+}
